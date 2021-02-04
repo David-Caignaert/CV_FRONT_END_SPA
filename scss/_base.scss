@@ -1,0 +1,30 @@
+html {
+  font-size: 62.5%;
+  width: 120rem;
+  margin: auto;
+  background: white;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--colorGrey);
+  background: var(--colorBlue);
+}
+p {
+  margin: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1rem 0 2rem 0;
+}
+a {
+  color: --colorGrey;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}

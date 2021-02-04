@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8c4c0ca939.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Appel Axios en CDN -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CV david caignaert</title>
+  </head>
+  <body>
+    <!--Mise en place du grid -->
+
+    <div class="grid__container">
+      <!-- La photo d'identité -->
+      <div class="picture"></div>
+
+      <!-- le header -->
+      <header class="candidat_contenu">
+        <div class="candidat">
+          <h1>{{nom_candidat}} {{prenom_candidat}}</h1>
+          <h2>développeur web et web mobile</h2>
+        </div>
+      </header>
+
+      <!-- Le aside -->
+      <aside>
+        <div class="candidat_contenu">
+          <h1>Information personnel</h1>
+          <hr />
+          <div class="candidat">
+            <p>{{age_candidat}}</p>
+            <p>07.68.21.11.13</p>
+            <p>{{adresse_candidat}} 70400 {{ville_candidat}}</p>
+            <p>{{mail_candidat}}</p>
+            <p>{{info_candidat}}</p>
+          </div>
+        </div>
+        <div>
+          <h1>Compétence programmation</h1>
+          <hr />
+          <p><i class="fab fa-html5"></i>HTML</p>
+          <p><i class="fab fa-css3-alt"></i>CSS</p>
+          <p>C#</p>
+          <p><i class="fab fa-node-js"></i>JS</p>
+          <p><i class="fab fa-php"></i>PHP</p>
+          <p><i class="fab fa-wordpress-simple"></i>WORD PRESS</p>
+          <p><i class="fab fa-git-alt"></i>GIT</p>
+          <p><i class="fab fa-figma"></i>FIGMA</p>
+        </div>
+      </aside>
+
+      <!-- le main -->
+      <main>
+        <!-- partie formations-->
+        <div>
+          <div class="main__h1">
+            <i class="fas fa-user-graduate"></i>
+            <h1>formation</h1>
+          </div>
+          <div class="main__formation">
+            <div>
+              <p class="main__formation__p1">2020-2021</p>
+              <p class="main__formation__p2">
+                Développeur WEB et WEB mobile NUMERICA Montbéliard
+              </p>
+            </div>
+            <div>
+              <p class="main__formation__p1">2016-2018</p>
+              <p class="main__formation__p2">
+                Concepteur Développeur Informatique (niveau II) Centre de
+                Réadaptation de Mulhouse
+              </p>
+            </div>
+            <div>
+              <p class="main__formation__p1">2013-2016</p>
+              <p class="main__formation__p2">
+                Démarche de réorientation professionnelle
+              </p>
+            </div>
+            <div>
+              <p class="main__formation__p1">1993-1995</p>
+              <p class="main__formation__p2">
+                Baccalauréat Professionnel Maintenance Systèmes Mécaniques et
+                Automatisés AFPI ACM Formation - Hénin Beaumont
+              </p>
+            </div>
+            <div>
+              <p class="main__formation__p1">1991-1993</p>
+              <p class="main__formation__p2">
+                CAP/BEP Électronique - LEP de Oignies
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- partie expériences-->
+        <div>
+          <div class="main__h1">
+            <i class="fas fa-user-tie"></i>
+            <h1 class="main__h1">expérience professionnelle</h1>
+          </div>
+          <div class="main__experience">
+            <div>
+              <p class="main__experience__p1">12/2019 - 06/2020</p>
+              <p class="main__experience__p2">
+                DAQ (dispositif en amont de la qualification), Héricourt (stage
+                de 3 semaines stage Onlinefromapro, un mois chez IDKOM)
+              </p>
+            </div>
+            <div>
+              <p class="main__experience__p1">09/2019 - 11/2019</p>
+              <p class="main__experience__p2">
+                UFPM (une formation pour moi c’est possible), Héricourt
+              </p>
+            </div>
+            <div>
+              <p class="main__experience__p1">09/2016 - 02/2018</p>
+              <p class="main__experience__p2">
+                Formation de niveau II, CRM Mulhouse (4 mois de stage à la
+                mairie de Mulhouse)
+              </p>
+            </div>
+            <div>
+              <p class="main__experience__p1">05/2016 - 08/2016</p>
+              <p class="main__experience__p2">
+                Formation de remise à niveau, CLRP Lille
+              </p>
+            </div>
+            <div>
+              <p class="main__experience__p1">01/2015 - 06/2015</p>
+              <p class="main__experience__p2">
+                Formation de remise à niveau, CLRP Lille
+              </p>
+            </div>
+            <div>
+              <p class="main__experience__p1">05/2014 - 09/2014</p>
+              <p class="main__experience__p2">
+                Formation de pré orientation, CRIC Pau
+              </p>
+            </div>
+            <div>
+              <p class="main__experience__p1">05/2014 - 09/2014</p>
+              <p class="main__experience__p2">
+                Formation de pré orientation, CRIC Pau
+              </p>
+            </div>
+            <div>
+              <p class="main__experience__p1">01/2012 - 10/2012</p>
+              <p class="main__experience__p2">
+                Magasiner cariste, Messier Arudy
+              </p>
+            </div>
+            <div>
+              <p class="main__experience__p1">04/2011 - 12/2011</p>
+              <p class="main__experience__p2">
+                Soudeur, Armax Gothain Libarinx
+              </p>
+            </div>
+            <div>
+              <p class="main__experience__p1">03/2008 - 02/2011</p>
+              <p class="main__experience__p2">
+                Magasiner cariste, Boulanger Noyelles-Godault
+              </p>
+            </div>
+            <div>
+              <p class="main__experience__p1">07/2007 - 02/2008</p>
+              <p class="main__experience__p2">
+                Électricien, Durisotti Sallaumines, APS Courcelles-lès-Lens
+              </p>
+            </div>
+            <div>
+              <p class="main__experience__p1">04/2007 - 07/2007</p>
+              <p class="main__experience__p2">
+                Réceptionniste, Carrefour Armentières
+              </p>
+            </div>
+            <div>
+              <p class="main__experience__p1">06/2006 - 12/2006</p>
+              <p class="main__experience__p2">
+                Maintenance, IPS Ipres, Belgique
+              </p>
+            </div>
+            <div>
+              <p class="main__experience__p1">11/2005 - 02/2006</p>
+              <p class="main__experience__p2">
+                Opérateur de production, Ideal Comines
+              </p>
+            </div>
+            <div>
+              <p class="main__experience__p1">09/2004 - 06/2005</p>
+              <p class="main__experience__p2">Monteur câbleur, SUDEA Carros</p>
+            </div>
+            <div>
+              <p class="main__experience__p1">11/1997 - 09/2004</p>
+              <p class="main__experience__p2">
+                Opérateur, Meuble Demeyer Pérenchies Delphi Harrison Flers en
+                Escrebieux
+              </p>
+            </div>
+            <div>
+              <p class="main__experience__p1">08/1996 - 05/1997</p>
+              <p class="main__experience__p2">
+                Service militaire, Spire, Allemagne
+              </p>
+            </div>
+            <div>
+              <p class="main__experience__p1">12/1993 - 12/1995</p>
+              <p class="main__experience__p2">
+                Maintenance, Sollac Biaches Saint Vaast
+              </p>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </main>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/param.js"></script>
+    <script src="js/route.js"></script>
+    <script src="js/router.js"></script>
+  </body>
+</html>
